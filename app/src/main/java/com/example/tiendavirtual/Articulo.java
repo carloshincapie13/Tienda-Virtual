@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class Articulo extends AppCompatActivity {
 
-    Button /*inicio*/ carrito, buscar, configuracion;
+    Button inicio, carrito, buscar, configuracion;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -19,18 +19,18 @@ public class Articulo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_articulo);
 
-        //inicio = findViewById(R.id.btn2);
+        inicio = findViewById(R.id.btn2);
         carrito = findViewById(R.id.btn3);
         buscar = findViewById(R.id.btn4);
         configuracion = findViewById(R.id.btn5);
 
-        /*inicio.setOnClickListener(new View.OnClickListener() {
+        inicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Articulo.this, Articulo.class);
                 startActivity(i);
             }
-        });*/
+        });
 
         carrito.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,9 +64,9 @@ public class Articulo extends AppCompatActivity {
     }
 
 
-    public void Inicio(View view){
+   /* public void Inicio(View view){
         Intent inicio= new Intent(this, Articulo.class);
         startActivity(inicio);
-    }
+    }*/
 
 }
