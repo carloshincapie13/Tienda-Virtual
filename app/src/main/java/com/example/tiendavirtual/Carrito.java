@@ -9,23 +9,23 @@ import android.widget.Button;
 
 public class Carrito extends AppCompatActivity {
 
-    Button realizar, cancelar;
+    Button  cancelar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carrito);
 
-        realizar = findViewById(R.id.btn16);
+       // realizar = findViewById(R.id.btn16);
         cancelar = findViewById(R.id.btn17);
 
-        realizar.setOnClickListener(new View.OnClickListener() {
+        /*realizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Carrito.this, Metodo.class);
+                Intent i = new Intent(Carrito.this, Pagos.class);
                 startActivity(i);
             }
-        });
+        });*/
 
         cancelar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,5 +34,11 @@ public class Carrito extends AppCompatActivity {
                 startActivity(i);
             }
         });
+    }
+
+    public void Realizar(View view){
+
+        Intent btrealizar = new Intent(this, Pagos.class);
+        startActivity(btrealizar);
     }
 }

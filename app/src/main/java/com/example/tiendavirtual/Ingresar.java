@@ -57,7 +57,7 @@ public class Ingresar extends AppCompatActivity {
         String usuario = Id.getText().toString();
         String clave = contras.getText().toString();
 
-        if (usuario.equals("admin")&& clave.equals("123456")){
+        if (usuario.equals("admin")&& clave.equals("admin")){
             Intent i = new Intent(this, Articulo.class );
             startActivity(i);
         }else{

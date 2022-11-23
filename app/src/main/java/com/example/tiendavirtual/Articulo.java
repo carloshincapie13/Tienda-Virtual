@@ -27,7 +27,7 @@ public class Articulo extends AppCompatActivity {
         /*inicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Articulo.this, .class);
+                Intent i = new Intent(Articulo.this, Articulo.class);
                 startActivity(i);
             }
         });*/
@@ -40,6 +40,7 @@ public class Articulo extends AppCompatActivity {
             }
         });
 
+
         buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,15 +50,23 @@ public class Articulo extends AppCompatActivity {
             }
         });*/
 
-                configuracion.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Toast.makeText(Articulo.this, "Configurar Método de Pago", Toast.LENGTH_SHORT).show();
-                        Intent i = new Intent(Articulo.this, Metodo.class);
-                        startActivity(i);
-                    }
-                });
+
+            }
+        });
+        configuracion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Articulo.this, "Configurar Método de Pago", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(Articulo.this, Pagos.class);
+                startActivity(i);
             }
         });
     }
+
+
+    public void Inicio(View view){
+        Intent inicio= new Intent(this, Articulo.class);
+        startActivity(inicio);
+    }
+
 }

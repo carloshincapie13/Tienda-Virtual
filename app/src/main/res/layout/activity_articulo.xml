@@ -52,6 +52,7 @@
         android:layout_height="66dp"
         android:layout_marginBottom="4dp"
         android:backgroundTint="#039BE5"
+        android:onClick="Inicio"
         android:textAlignment="center"
         app:icon="@mipmap/inicio"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -148,7 +149,7 @@
         android:background="#2196F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />

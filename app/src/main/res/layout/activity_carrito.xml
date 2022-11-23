@@ -9,24 +9,25 @@
 
     <Button
         android:id="@+id/btn16"
-        android:layout_width="150dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="108dp"
+        android:layout_width="151dp"
+        android:layout_height="58dp"
         android:backgroundTint="#2196F3"
+        android:onClick="Realizar"
         android:text="Realizar Compra"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
 
     <Button
         android:id="@+id/btn17"
         android:layout_width="150dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="48dp"
+        android:layout_height="60dp"
         android:backgroundTint="#2196F3"
         android:text="Cancelar"
         android:textAlignment="center"
@@ -34,8 +35,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
 
     <TextView
         android:id="@+id/textView12"
@@ -76,7 +79,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.357" />
@@ -85,36 +88,38 @@
         android:id="@+id/tv5"
         android:layout_width="92dp"
         android:layout_height="56dp"
-        android:layout_marginTop="240dp"
         android:text="Carrito (1)    #1"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintHorizontal_bias="0.827"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357" />
 
     <CheckBox
-        android:id="@+id/cb6"
-        android:layout_width="301dp"
+        android:id="@+id/cb5"
+        android:layout_width="250dp"
         android:layout_height="56dp"
-        android:layout_marginTop="472dp"
         android:buttonTint="#039BE5"
-        android:text="Item 3"
+        android:text="Item 2"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#039BE5"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.672"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
 
     <CheckBox
         android:id="@+id/cb4"
-        android:layout_width="301dp"
+        android:layout_width="250dp"
         android:layout_height="56dp"
         android:layout_marginTop="336dp"
         android:buttonTint="#039BE5"
@@ -127,18 +132,17 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.677"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView10"
-        app:layout_constraintVertical_bias="0.017" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
-        android:id="@+id/cb5"
-        android:layout_width="301dp"
+        android:id="@+id/cb6"
+        android:layout_width="250dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="268dp"
         android:buttonTint="#039BE5"
-        android:text="Item 2"
+        android:text="Item 3"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#039BE5"
@@ -146,7 +150,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,14 +13,14 @@
         android:theme="@style/Theme.TiendaVirtual"
         tools:targetApi="31">
         <activity
-            android:name=".Articulo"
+            android:name=".Pagos"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Metodo"
+            android:name=".Articulo"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
