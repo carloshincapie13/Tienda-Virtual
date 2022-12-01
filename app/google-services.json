@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "769349074621",
+    "project_id": "tiendavirtual-2641d",
+    "storage_bucket": "tiendavirtual-2641d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769349074621:android:45f5824ea0dfc1450041d4",
+        "android_client_info": {
+          "package_name": "com.example.tiendavirtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769349074621-ih8f3s7fvb75h5d05aqob0q41r228qhe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tiendavirtual",
+            "certificate_hash": "04c2f08f85aa8d046e5e141fd6d42d833a90b20f"
+          }
+        },
+        {
+          "client_id": "769349074621-ee8gh1mtji7rsmnb21sktif9ebbhln77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIkWxK_tg2rT5n2C289SUErRUBjia7OjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769349074621-ee8gh1mtji7rsmnb21sktif9ebbhln77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
