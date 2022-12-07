@@ -1,6 +1,8 @@
 package com.example.tiendavirtual;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -9,8 +11,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Articulo extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
+public class Articulo extends AppCompatActivity {
+    List<ListaElementos> elementos;
     Button inicio, carrito, buscar, configuracion;
 
     @SuppressLint("MissingInflatedId")
@@ -23,6 +28,9 @@ public class Articulo extends AppCompatActivity {
         carrito = findViewById(R.id.btn3);
         buscar = findViewById(R.id.btn4);
         configuracion = findViewById(R.id.btn5);
+
+        init();
+
 
         inicio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +69,20 @@ public class Articulo extends AppCompatActivity {
                 startActivity(i);
             }
         });
+    }
+
+    public void init(){
+        elementos = new ArrayList<>();
+        elementos.add(new ListaElementos("Pantalones", "M/F", "Disponible"));
+        elementos.add(new ListaElementos("Zapatos", "M", "Agotado"));
+        elementos.add(new ListaElementos("Top", "F", "Agotado"));
+        elementos.add(new ListaElementos("Sudadera", "M/F", "Disponible"));
+
+        ListAdapter ListAdapter = new ListAdapter(elementos, this);
+        RecyclerView recyclerView =findViewById(R.id.ListRecyclerView);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(ListAdapter);
     }
 
 
