@@ -4,11 +4,13 @@ public class ListaElementos {
     public String name;
     public String gender;
     public String status;
+    private int iconImage; //aqui
 
-    public ListaElementos(String name, String gender, String status) {
+    public ListaElementos(String name, String gender, String status,int iconImage) {
         this.name = name;
         this.gender = gender;
         this.status = status;
+        this.iconImage= iconImage;
     }
 
     public String getName() {
@@ -33,6 +35,14 @@ public class ListaElementos {
 
     public void setStatus(String status) {
         this.status = status;
+    } //aqui
+
+    public int geticonImage() {
+        return iconImage;
+    }
+
+    public void seticonImage(int idImagen) {
+        this.iconImage = iconImage;
     }
 }
 

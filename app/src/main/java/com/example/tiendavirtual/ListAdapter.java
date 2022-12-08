@@ -1,6 +1,7 @@
 package com.example.tiendavirtual;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,16 +45,31 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
 
         ViewHolder(View itemView){
             super(itemView);
-            iconImage = itemView.findViewById(R.id.iconImageView);
+
+
             name = itemView.findViewById(R.id.nameTextView);
             gender = itemView.findViewById(R.id.descriptionTextview);
             status = itemView.findViewById(R.id.StatusTextView);
+            iconImage = itemView.findViewById(R.id.iconImageView);
+
+//7 aqui
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //Intent intent = new Intent(view.getContext(), InfoTienda.class);
+
+                    //view.getContext().startActivity(intent);
+                }
+            });
+
         }
 
         void binData(final ListaElementos item){
+
             name.setText(item.getName());
             gender.setText(item.getGender());
             status.setText(item.getStatus());
+            iconImage.setImageResource(item.geticonImage());    //aqui
 
         }
 

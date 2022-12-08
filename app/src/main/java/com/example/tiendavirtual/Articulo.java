@@ -12,11 +12,14 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Articulo extends AppCompatActivity {
     List<ListaElementos> elementos;
     Button inicio, carrito, buscar, configuracion;
+
+    private RecyclerView recyclerView;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -28,6 +31,8 @@ public class Articulo extends AppCompatActivity {
         carrito = findViewById(R.id.btn3);
         buscar = findViewById(R.id.btn4);
         configuracion = findViewById(R.id.btn5);
+
+
 
         init();
 
@@ -72,11 +77,24 @@ public class Articulo extends AppCompatActivity {
     }
 
     public void init(){
+
+        //recyclerView = findViewById(R.id.ListRecyclerView);
+
+        //LinkedList<ListaElementos> elementos = new LinkedList<ListaElementos>();
+
         elementos = new ArrayList<>();
-        elementos.add(new ListaElementos("Pantalones", "M/F", "Disponible"));
-        elementos.add(new ListaElementos("Zapatos", "M", "Agotado"));
-        elementos.add(new ListaElementos("Top", "F", "Agotado"));
-        elementos.add(new ListaElementos("Sudadera", "M/F", "Disponible"));
+        elementos.add(new ListaElementos("Pantalones", "M/F", "Disponible", R.drawable.pant)); // aqui
+        elementos.add(new ListaElementos("Zapatos", "M", "Agotado", R.drawable.zap));
+        elementos.add(new ListaElementos("Top", "F", "Agotado", R.drawable.sos));
+        elementos.add(new ListaElementos("Sudadera", "M/F", "Disponible", R.drawable.sud));
+
+        elementos.add(new ListaElementos("Balon de micro", "M/F", "Disponible", R.drawable.balon));
+        elementos.add(new ListaElementos("Varios", "M", "Agotado", R.drawable.balones));
+        elementos.add(new ListaElementos("Calcetines", "F", "Agotado", R.drawable.calcetines));
+        elementos.add(new ListaElementos("Cachucha", "M/F", "Disponible", R.drawable.gorra));
+        elementos.add(new ListaElementos("Traje", "M", "Agotado", R.drawable.traje));
+        elementos.add(new ListaElementos("Zapatos", "F", "Agotado", R.drawable.zapatos));
+
 
         ListAdapter ListAdapter = new ListAdapter(elementos, this);
         RecyclerView recyclerView =findViewById(R.id.ListRecyclerView);
