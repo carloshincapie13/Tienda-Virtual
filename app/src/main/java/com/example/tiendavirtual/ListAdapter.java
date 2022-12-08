@@ -35,6 +35,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
     @Override
     public void onBindViewHolder(final ListAdapter.ViewHolder holder, final int position){
         holder.binData(mData.get(position));
+        holder.position=holder.getBindingAdapterPosition(); //aqui************************
     }
 
     public void setItems(List<ListaElementos> items) { mData = items; }
@@ -42,6 +43,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
     public class ViewHolder extends RecyclerView.ViewHolder{
         ImageView iconImage;
         TextView name, gender, status;
+        private int position;
 
         ViewHolder(View itemView){
             super(itemView);
@@ -52,13 +54,19 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
             status = itemView.findViewById(R.id.StatusTextView);
             iconImage = itemView.findViewById(R.id.iconImageView);
 
-//7 aqui
+//7 aqui ***************************************
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //Intent intent = new Intent(view.getContext(), InfoTienda.class);
+                    Intent intent = new Intent(view.getContext(), ActivityTienda.class);
 
-                    //view.getContext().startActivity(intent);
+                    intent.putExtra("nombre",mData.get(position).getName());
+                    intent.putExtra("genero",mData.get(position).getGender());
+
+                    intent.putExtra("estado",mData.get(position).getStatus());
+                    intent.putExtra("idImagen",mData.get(position).geticonImage());
+
+                    view.getContext().startActivity(intent);
                 }
             });
 
@@ -69,7 +77,9 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
             name.setText(item.getName());
             gender.setText(item.getGender());
             status.setText(item.getStatus());
-            iconImage.setImageResource(item.geticonImage());    //aqui
+            iconImage.setImageResource(item.geticonImage());
+
+            //aqui
 
         }
 

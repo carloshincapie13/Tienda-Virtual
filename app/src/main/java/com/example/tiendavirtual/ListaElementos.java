@@ -44,6 +44,17 @@ public class ListaElementos {
     public void seticonImage(int idImagen) {
         this.iconImage = iconImage;
     }
+
+    @Override
+    public String toString() {
+        return "Articulo{" +
+                "nombre='" + name + '\'' +
+                ", genero='" + gender + '\'' +
+                ", estado='" + status + '\'' +
+
+                ", idImagen=" + iconImage +
+                '}';
+    }
 }
 
 

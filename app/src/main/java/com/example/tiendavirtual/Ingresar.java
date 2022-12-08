@@ -23,6 +23,7 @@ public class Ingresar extends AppCompatActivity {
         Id = findViewById(R.id.et);
         contras = findViewById(R.id.etp);
         registro = findViewById(R.id.tv3);
+
         registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,6 +66,8 @@ public class Ingresar extends AppCompatActivity {
             mensaje.show();
         }
     }
+
+
 
     /*public void Salir(View view){
 

@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="414dp"
-        android:layout_height="102dp"
+        android:layout_width="430dp"
+        android:layout_height="51dp"
         android:background="#2196F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,10 +31,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196" />
+        app:layout_constraintVertical_bias="0.095" />
 
     <EditText
         android:id="@+id/et1"
@@ -47,10 +47,10 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.206"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.323" />
+        app:layout_constraintVertical_bias="0.218" />
 
     <EditText
         android:id="@+id/et2"
@@ -66,7 +66,7 @@
         app:layout_constraintHorizontal_bias="0.206"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422" />
+        app:layout_constraintVertical_bias="0.31" />
 
     <EditText
         android:id="@+id/et3"
@@ -79,10 +79,10 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintHorizontal_bias="0.211"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527" />
+        app:layout_constraintVertical_bias="0.403" />
 
     <EditText
         android:id="@+id/et4"
@@ -95,16 +95,16 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintHorizontal_bias="0.188"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.634" />
+        app:layout_constraintVertical_bias="0.519" />
 
     <EditText
         android:id="@+id/et5"
         android:layout_width="324dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="172dp"
+        android:layout_marginBottom="288dp"
         android:ems="10"
         android:hint="Confirmar Password"
         android:inputType="textPassword"
@@ -112,14 +112,14 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="84dp"
+        android:layout_marginBottom="112dp"
         android:backgroundTint="#2196F3"
         android:text="Crear Usuario"
         android:textAlignment="center"
@@ -131,9 +131,9 @@
 
     <Button
         android:id="@+id/btn9"
-        android:layout_width="150dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="174dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="#2196F3"
         android:text="Cancelar"
         android:textAlignment="center"

@@ -88,8 +88,8 @@ public class Articulo extends AppCompatActivity {
         elementos.add(new ListaElementos("Top", "F", "Agotado", R.drawable.sos));
         elementos.add(new ListaElementos("Sudadera", "M/F", "Disponible", R.drawable.sud));
 
-        elementos.add(new ListaElementos("Balon de micro", "M/F", "Disponible", R.drawable.balon));
-        elementos.add(new ListaElementos("Varios", "M", "Agotado", R.drawable.balones));
+        elementos.add(new ListaElementos("Balon mF", "M/F", "Disponible", R.drawable.balon));
+        elementos.add(new ListaElementos("Varios", "M/F", "Agotado", R.drawable.balones));
         elementos.add(new ListaElementos("Calcetines", "F", "Agotado", R.drawable.calcetines));
         elementos.add(new ListaElementos("Cachucha", "M/F", "Disponible", R.drawable.gorra));
         elementos.add(new ListaElementos("Traje", "M", "Agotado", R.drawable.traje));

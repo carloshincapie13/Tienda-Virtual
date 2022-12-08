@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".InfoMascotaActivity">
+
+    <TextView
+        android:id="@+id/txtNombreArticulo"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="TextView"
+        android:textColor="#1F33B1"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagenArticuloInfo"
+        android:layout_width="240dp"
+        android:layout_height="284dp"
+        android:layout_margin="10sp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtGeneroArticuloInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="TextView"
+        android:textColor="#0A0A0B" />
+
+    <TextView
+        android:id="@+id/txtEstadoArticuloInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="TextView"
+        android:textColor="#0E0E0E" />
+
+    <TextView
+        android:id="@+id/txtNumeroArticuloInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#48810B"
+        android:visibility="invisible" />
+</LinearLayout>
