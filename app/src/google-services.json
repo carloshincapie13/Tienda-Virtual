@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1025403671806",
+    "project_id": "tienda-virtual-d77f5",
+    "storage_bucket": "tienda-virtual-d77f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025403671806:android:da92c2d1749dee240c01af",
+        "android_client_info": {
+          "package_name": "com.example.tiendavirtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025403671806-9mo1qc22gb3vju8rvjo66vkll691qmbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKu35XgWv7pz3F4vRdnkrSDlZkQUQU6D0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025403671806-9mo1qc22gb3vju8rvjo66vkll691qmbc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

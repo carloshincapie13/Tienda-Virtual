@@ -51,21 +51,21 @@ public class Registro extends AppCompatActivity {
                 crear.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
                         String correo = et1Correo.getText().toString();
                         String confirmarCorreo = et2ConfirmarCorreo.getText().toString();
                         String NombreUsuario = et3NombreUsuario.getText().toString();
                         String Password = et4Password.getText().toString();
                         String ConfirmarPasword = et4Password.getText().toString();
 
-                        firebaseAuth.signInWithEmailAndPassword(correo, String.valueOf(et5ConfirmarPassword)).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        //firebaseAuth.signInWithEmailAndPassword(correo, String.valueOf(et5ConfirmarPassword)).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        firebaseAuth.createUserWithEmailAndPassword(correo,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     Toast.makeText(Registro.this, "Usuario creado", Toast.LENGTH_SHORT).show();
                                 }
                                 else {
-                                    Toast.makeText(Registro.this, "Usuario no creado en el servidor", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Registro.this, "Usuario no creado, ingrese el correo y una contraseña de 6 digitos o mas ", Toast.LENGTH_LONG).show();
                                 }
                             }
 
